@@ -1,0 +1,117 @@
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+
+    &__wrapper {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    &__logo {
+        width: 175px;
+        a {
+            display: block;
+        }
+    }
+
+    &__hambarger {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 20;
+
+        &_line {
+            background-color: #333;
+            height: 2px;
+            transition: .5s ease;
+        }
+    }
+
+    .left_menu {
+        z-index: 20;
+        width: 300px;
+        height: 100vh;
+        padding: 60 25px;
+        position: fixed;
+        top: 0;
+        color: #fff;
+        background-color: #121212;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: .5s all;
+
+        &__section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            li {
+                border-bottom: solid 1px #fff;
+                padding: 20px 0;
+
+                &:first-child {
+                    border-top: solid 1px #fff;
+                }
+
+                a {
+                    margin: auto 0;
+                }
+            }
+        }
+
+        &__sns {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+
+    &.hambarger-open {
+        .header {
+            &__hambarger_line {
+                background-color: #fff;
+            }
+            &__hambarger_line:nth-of-type(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+            &__hambarger_line:nth-of-type(2) {
+                opacity: 0;
+            }
+            &__hambarger_line:nth-of-type(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+
+        }
+        .layer {
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            inset: 0;
+            background-color: #000;
+            opacity: .6;
+            z-index: 10;
+        }
+
+        .left_menu {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
