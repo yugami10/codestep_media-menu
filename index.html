@@ -3,9 +3,224 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/destyle.css" />
         <link rel="stylesheet" href="./css/index.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/index.js"></script>
+        <script src="./js/swiper.js" type="module"></script>
     </head>
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="" />
+                    </a>
+                </div>
+                <div class="header__hambarger">
+                    <div class="header__hambarger_line"></div>
+                    <div class="header__hambarger_line"></div>
+                    <div class="header__hambarger_line"></div>
+                </div>
+            </div>
+            <div class="layer"></div>
+            <div class="left_menu">
+                <nav>
+                    <ul class="left_menu__section">
+                        <li>
+                            <a href="#pickup">PICK UP</a>
+                        </li>
+                        <li>
+                            <a href="#feature">FEATURE</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="left_menu__sns">
+                        <li>
+                            <a href="https://twitter.com">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">instagram</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="main_video">
+                <video autoplay muted loop playsinline>
+                    <source src="video/Loom _ Free Screen & Video Recording Software _ Loom - 4 May 2024.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <section id="pickup" class="pickup">
+                <h2 class="pickup__title">PICK UP</h2>
+                <div class="swiper pickup__swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="img/pickup1.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup2.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup3.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup4.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup5.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup6.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup7.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup8.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/pickup9.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="feature" class="feature">
+                <h2 class="feature__title">FEATURE</h2>
+                <div class="feature__list">
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature1.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature2.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature3.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature4.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature5.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature6.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature7.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature8.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <div class="feature__item_picture_wrapper">
+                            <img src="img/feature9.jpg" alt="" />
+                        </div>
+                        <div class="feature__item_content">
+                            <p class="feature__item_header">category</p>
+                            <p class="feature__item_body">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p class="feature__item_footer">XXXX.XX.XX</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2 class="contact__title">CONTACT</h2>
+                <div class="contact__content">
+                    <div class="contact__message">
+                        <p>テキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキ ストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキ ストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <form class="contact__form">
+                        <dl>
+                            <dt>
+                                <label for="name">Name:</label>
+                            </dt>
+                            <dd>
+                                <input type="text" id="name" autocomplete="off" />
+                            </dd>
+                            <dt>
+                                <label for="mail">Mail:</label>
+                            </dt>
+                            <dd>
+                                <input type="text" id="mail" autocomplete="off" />
+                            </dd>
+                            <dt>
+                                <label for="message">Message:</label>
+                            </dt>
+                            <dd>
+                                <textarea id="message" rows="2" autocomplete="off"></textarea>
+                            </dd>
+                        </dl>
+                        <button type="button">SEND</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="copy_right">© Sneakers</p>
+        </footer>
     </body>
 </html>
