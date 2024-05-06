@@ -1,3 +1,4 @@
+// common css
 body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
@@ -5,6 +6,13 @@ body {
 img {
     width: 100%;
     object-fit: cover;
+}
+
+// valiable
+@mixin title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .header {
@@ -121,5 +129,23 @@ img {
         width: 100%;
         max-height: 900px;
         object-fit: cover;
+    }
+}
+
+.pickup {
+    margin-top: 110px;
+
+    &__title {
+        @include title;
+    }
+
+    &__swiper {
+        margin-top: 40px;
+    }
+}
+
+.swiper {
+    .swiper-wrapper {
+        height: auto;
     }
 }
