@@ -183,6 +183,10 @@ img {
 
 .feature {
     margin-top: 110px;
+    @include mq(sp) {
+        margin-top: 105px;
+        padding: 0 16px;
+    }
 
     &__title {
         @include title;
@@ -195,6 +199,11 @@ img {
         grid-template-columns: repeat(auto-fit, 30%);
         justify-content: center;
         max-width: 1300px;
+
+        @include mq(sp) {
+            margin-top: 25px;
+            grid-template-columns: repeat(auto-fit, 100%);
+        }
     }
 
     &__item {
@@ -214,6 +223,10 @@ img {
             color: #121212;
             padding: 30px;
             border: 1px solid #CCCCCC;
+
+            @include mq(sp) {
+                padding: 20px 18px;
+            }
         }
 
         &_header {
@@ -239,6 +252,10 @@ img {
     padding: 0 15px;
     background-color: #121212;
     color: #FFFFFF;
+
+    @include mq(sp) {
+        margin-top: 90px;
+    }
 
     &__title {
         font-size: 36px;
