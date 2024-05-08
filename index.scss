@@ -262,6 +262,10 @@ img {
         font-weight: bold;
         text-align: center;
         padding-top: 60px;
+        @include mq(sp) {
+            font-size: 24px;
+            padding-top: 85px;
+        }
     }
 
     &__content {
@@ -270,10 +274,20 @@ img {
         column-gap: 140px;;
         margin: 40px auto 0;
         max-width: 1300px;
+        @include mq(sp) {
+            margin-top: 25px;
+            flex-direction: column;
+            justify-content: initial;
+            column-gap: initial;
+        }
     }
 
     &__message {
         width: 50%;
+        font-size: 14.4px;
+        @include mq(sp) {
+            width: 100%;
+        }
 
         p {
             &:nth-child(2) {
@@ -287,6 +301,10 @@ img {
 
     &__form {
         width: 50%;
+        @include mq(sp) {
+            width: 100%;
+            margin-top: 20px;
+        }
 
         input, textarea {
             background-color: #FFFFFF;
@@ -308,6 +326,9 @@ img {
             height: 45px;
             border: 1px solid #FFFFFF;
             text-align: center;
+            @include mq(sp) {
+                width: 100%;
+            }
         }
     }
 }
@@ -318,4 +339,7 @@ img {
     color: #FFFFFF;
     margin: auto 0;
     text-align: center;
+    @include mq(sp) {
+        padding-top: 95px;
+    }
 }
